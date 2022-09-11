@@ -51,16 +51,22 @@
     justify-content: space-between;
     align-items: center;
     padding: 8px;
-    font-size: large;
+    font-size: small;
     width: 32px;
     transform: translateX(50%);
 }
 
 .button-container button {
+    font-size: large;
     color: #F97367;
     width:24px ;
     height: 24px;
     border-radius: 50%;
     border: #F97367 2px solid;
     background: none;
+    cursor: pointer;
+}
+
+.button-container span {
+    margin: 8px 0;
 }

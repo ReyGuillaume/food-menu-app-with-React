@@ -3,7 +3,7 @@ import './Header.css';
 function RightContent (props) {
     if (props.cartButton) {
         return <button onClick={props.handleTogglePageContent}>
-            {props.nbrArticles}
+            {props.cartContent.length}
         </button>;
     }
 }

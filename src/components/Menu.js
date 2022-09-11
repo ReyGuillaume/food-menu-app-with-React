@@ -5,7 +5,12 @@ export default function Menu (props) {
     return (<div className='page-content'>
         <Header leftContent="Menu" cartButton={true} {...props}/>
         <div className='food-list'>
-            <FoodList/>
+            <FoodList 
+                list={[{}]} 
+                handleAddToCart={props.handleAddToCart} 
+                handleRemoveToCart={props.handleRemoveToCart} 
+                cartContent={props.cartContent}
+            />
         </div>
     </div>);
 }

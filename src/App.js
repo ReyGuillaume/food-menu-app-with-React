@@ -19,12 +19,26 @@ export default function App() {
     setWatchingCart(!watchingCart);
   }
 
+  const handleAddToCart = (id) => {
+    const cartCopy = [...cart];
+    cartCopy.push(id);
+    setCart(cartCopy);
+  }
+
+  const handleRemoveToCart = (id) => {
+    const cartCopy = [...cart];
+    cartCopy.splice(cartCopy.indexOf(id), 1);
+    setCart(cartCopy);
+  }
+
   return (
     <div className="App">
       <PageContent 
         watchingCart={watchingCart} 
+        cartContent={cart} 
         handleTogglePageContent={handleTogglePageContent} 
-        nbrArticles={cart.length}
+        handleAddToCart={handleAddToCart} 
+        handleRemoveToCart={handleRemoveToCart}
       />
       <NavBarFooter/>
     </div>
