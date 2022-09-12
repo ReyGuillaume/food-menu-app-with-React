@@ -39,18 +39,6 @@ const useFoodData = () => {
     },[])
 
     return {foodData, isLoading};
-
-    // Suppr netx
-    // const data = [{
-    //     id: 100,
-    //     name: "Un Truc qui a l'air bon",
-    //     img: "",
-    //     price: returnRandomInt(5,15)
-    // }]
-
-    //  const bool = false;
-
-    // return {data, bool}
 }
 
 export default useFoodData;

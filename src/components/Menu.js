@@ -6,10 +6,10 @@ export default function Menu (props) {
         <Header leftContent="Menu" cartButton={true} {...props}/>
         <div className='food-list'>
             <FoodList 
-                list={[{}]} 
+                isCart={false} 
+                cartContent={props.cartContent} 
                 handleAddToCart={props.handleAddToCart} 
                 handleRemoveToCart={props.handleRemoveToCart} 
-                cartContent={props.cartContent}
             />
         </div>
     </div>);

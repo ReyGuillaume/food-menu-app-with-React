@@ -19,15 +19,16 @@ export default function App() {
     setWatchingCart(!watchingCart);
   }
 
-  const handleAddToCart = (id) => {
+  const handleAddToCart = (object) => {
     const cartCopy = [...cart];
-    cartCopy.push(id);
+    cartCopy.push(object);
     setCart(cartCopy);
   }
 
-  const handleRemoveToCart = (id) => {
+  const handleRemoveToCart = (object) => {
     const cartCopy = [...cart];
-    cartCopy.splice(cartCopy.indexOf(id), 1);
+    const id = cartCopy.findIndex(obj => obj.id === object.id);
+    cartCopy.splice(id, 1);
     setCart(cartCopy);
   }
 

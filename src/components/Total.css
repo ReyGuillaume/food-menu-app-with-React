@@ -1,0 +1,30 @@
+.total {
+    margin: 0 16px 32px;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.price span {
+    font-size: small;
+    position: relative;
+    bottom: 4px;
+    opacity: 0.3;
+}
+
+.confirm {
+    cursor: pointer;
+    display: block;
+    margin: 0 auto 128px;
+    font-size: large;
+    color: #FFF;
+    background-color: #F97367;
+    border: none;
+    border-radius: 30px;
+    padding: 16px 64px;
+}
